@@ -1,0 +1,130 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #2d6a4f;
+    padding: 20px 0;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cart a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.title h1 {
+    font-size: 28px;
+}
+
+/* Supermarkets section */
+.supermarkets {
+    padding: 40px 60px;
+    background-color: white;
+    /* text-align: center; */
+}
+
+.supermarkets h2{
+    color: #f1f1f1;
+    font-size: 30px;
+    padding: 30px 20px;
+}
+
+.Supermarket1bg {
+    /* padding: 40px 20px; */
+    /* background-color: white; */
+    background-color: #199235;
+    margin: 5vh 7vw 0;
+    padding: 10px 3.0vw 40px;
+    border-radius: 30px;
+    /* text-align: center; */
+}
+
+.supermarket-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.supermarket {
+    background-color: #e7f6f2;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.supermarket h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.supermarket p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Carousel section */
+/* .carousel {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 20px;
+} */
+
+.carousel-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+    overflow-x: scroll;
+}
+
+.carousel-item {
+    background-color: #f1f1f1;
+    padding: 20px 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 250px; /* Fixed width */
+    height: 250px; /* Fixed height */
+    object-fit: cover; 
+    border-radius: 8px;
+}
+
+.carousel-item h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2d6a4f;
+    color: white;
+    margin-top: 40px;
+}
