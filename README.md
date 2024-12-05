@@ -1,5 +1,7 @@
 # Student Smart Homes (SSH) Grocery System
 
+Set up xampp in your local repo, git clone "link" into your xampp htdocs.
+
 Goals: Users will be able to connect to partnered supermarkets so that users have
  access to the latest price and information of the products including promotional
  discounts.
