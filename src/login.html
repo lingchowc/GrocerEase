@@ -1,30 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="/css/login.css">
 </head>
-<body class="container">
-    <div>
-        <div class="loginHeader">
-            <h1>Student Smart Home</h1>
-            <p>Grocery System</p>
-        </div>
-        <div class="loginBody">
-            <form action="">
-                <div>
-                    <label for="">Username</label>
-                    <input type="text" />
-                </div>
-                <div>
-                    <label for="">Password</label>
-                    <input type="password" />
-                </div>
-                <div>
-                    <button>login</button>
-                </div>
-            </form>
-        </div>
+<body>
+    <div class="container">
+        <form action="login.php" method="POST">
+        <h1>Welcome to Student Smart Home</h1>
+            <div class="row justify-content-center">
+                <h2>Username</h2>
+                <input type="text" name="username" class="form-control"><br />
+                <h2>Password</h2>
+                <input type="password" name="password" class="form-control"><br />
+                <input type="submit" value="login" class="btn btn-primary">
+            </div>
+        </form>
     </div>
 </body>
 </html>
