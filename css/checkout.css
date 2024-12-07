@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fbfed3;
+}
+
+
+header {
+    background-color: #2d6a4f;
+    padding: 20px;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.title h1 {
+    font-size: 28px;
+}
+
+.cart a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+ 
+div.navigation li a.actives{
+    /* font-family: 'Ibarra Real Nova', serif; */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+div.main-container{
+    display: flex;
+}
+
+div.cards-container{
+    display: flex;
+    flex-direction: column;
+    width: 5%;
+}
+
+div.cards-container-1, div.cards-container-2{
+    /* border: 1px solid red;
+    height: 100vh; */
+    padding: 0px 10px;
+    margin: 20px 8px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.address{
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: #DCFFF7;
+}
+
+.summary-container {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center;  */
+    width: 100%;
+    padding: 20px;
+}
+
+.summary {
+    margin: 0 auto; /* Ensures it's centered horizontally */
+    width: 80%; /* Adjust width as needed */
+    /* text-align: center;  */
+}
+
+.order{
+    background-color: #EEFFE8;
+    margin: 5px 5vw 2px;
+    padding: 10px 3.0vw 40px;
+    border-radius: 30px;
+}
+
+.order-item {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Push items to opposite ends */
+    align-items: center; /* Vertically align content */
+  }
+  
+.price {
+    font-weight: bold; /* Optional: Emphasize the price */
+    color: #333; /* Optional: Define color */
+}
+
+div.summary{
+    background-color: #fdf5ac;
+    max-height: 3000px;
+    /* margin-left: 20px; */
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px black;
+    transition: all 0.2s ease 0s;
+}
+
+input.input_quantity{
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    border: 2px solid rgb(238, 49, 49);
+    padding: 0px 2px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+div.quantity{
+    margin-top: 13px;
+    margin-left: 5px;
+}
+
+div.quantity p{
+    margin: 0;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+div.quantity i{
+    font-size: 18px;
+    cursor: pointer;
+    color: rgb(14, 135, 234);
+}
+
+div.quantity i:hover{
+    color: rgb(154, 200, 237);
+    transition: all 0.3s ease 0s;
+}
+
+p.total_price{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: bolder;
+    color: rgb(171, 4, 4);
+}
+
+p.price_p{
+    margin-top: 13px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+p.remove_p{
+    margin-top: 13px;
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+div.remove i{
+    font-size: 25px;
+    color: rgb(111, 4, 4);
+    margin-top: 4px;
+    transition: all 0.3s ease 0s;
+}
+
+div.remove i:hover{
+    color: rgb(225, 100, 100);
+    cursor: pointer;
+}
+
+.card-stats .border{
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.cards:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgb(50, 50, 50);
+}
+
+.summary h1{
+    padding: 15px 15px;
+    margin-bottom: 0;
+    /* font-family: 'Fugaz One'; */
+    /* text-shadow: 0.1em 0.1em 0 rgb(240 108 131); */
+}
+.summary h2{
+    padding: 30px 50px;
+    margin-bottom: 0;
+    /* font-family: 'Fugaz One'; */
+    /* text-shadow: 0.1em 0.1em 0 rgb(240 108 131); */
+}
+
+
+.summary h3{
+    padding: 5px 6px;
+    margin-bottom: 0;
+    /* font-family: 'Fugaz One'; */
+    /* text-shadow: 0.1em 0.1em 0 rgb(240 108 131); */
+}
+
+
+table{
+    margin: 20px auto; /* Centers the table horizontally */
+    width: 95%; /* Adjust width as needed */
+    font-size: 17px;
+    font-weight: bold;
+    border-collapse: collapse;
+}
+
+table td{
+    padding: 9px 5px;
+}
+
+table td:nth-of-type(2){
+    text-align: right;
+}
+
+table, td{
+    border-collapse: collapse;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+}
+
+/* dropdown menu */
+.select-box{
+    margin-top: 8px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.selected:hover{
+    background: #414b57;
+}
+
+.select-box .options-container{
+    background: #2f3640;
+    color: #f5f6fa;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    border-radius: 8px;
+    overflow: hidden;
+    order: 1;
+}
+
+.selected{
+    background: #2f3640;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    color: #f5f6fa;
+    position: relative;
+    order:0;
+    /* font-family: 'Fugaz One'; */
+}
+
+.selected::after{
+    content: "";
+    background: url("../../image/arrow-down.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 32px;
+    right: 10px;
+    top: 4px;
+    transition: all 0.4s;
+}
+
+.select-box .options-container.active{
+    max-height: 240px;
+    opacity: 1;
+    /* overflow-y: scroll; */
+}
+
+.select-box .options-container.active + .selected::after{
+    transform: rotateX(180deg);
+    top: -5px;
+}
+
+.select-box .option, .selected{
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.select-box .option:hover{
+    background: #414b57;
+}
+
+.select-box label{
+    cursor: pointer;
+}
+
+.select-box .option .radio{
+    display: none;
+}
+/* end */
+
+input.input_code{
+    margin-top: 8px;
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 92%;
+    /* font-family: 'Fugaz One'; */
+}
+
+input.input_code:hover{
+    background: rgb(240, 215, 218);
+}
+
+input.input_code:focus{
+    background: rgb(245, 245, 187);
+    border: 1px solid rgb(255, 255, 97);
+}
+
+button.discount_button{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 8px 10px;
+    width: 80px;
+    background: rgb(249, 115, 92);
+    transition: all 0.3 ease 0s;
+    box-shadow: 3px 3px 8px rgb(135, 3, 3);
+    /* font-family: 'Fugaz One'; */
+}
+
+button.discount_button:hover{
+    background: rgb(246, 190, 170);
+    cursor: pointer;
+    border: 2px solid red;
+    color: rgb(255, 32, 32);
+    font-weight: bold;
+}
+
+tr.shipping_fee td{
+    padding-top: 0;
+}
+
+button.checkout_button{
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 7px;
+    border: 0px;
+    background: #ed3162;
+    color: whitesmoke;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.315);
+    /* font-family: 'Fugaz One'; */
+}
+
+button.checkout_button:hover{
+    box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.429);
+    cursor: pointer;
+}
+
+button.hidden_btn{
+    display: none;
+}
+
+/* footer */
+.footercontent{
+    background-color:#ffc6c6;
+    width:100%;
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+}
+
+.footer {
+    display: inline;
+}
+
+.ig{
+    display: inline;
+    margin: 20px;
+}

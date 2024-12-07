@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #fbfed3;
+    background-color: #f4f4f4;
     color: #333;
 }
 
@@ -52,15 +52,7 @@ header {
 }
 
 .supermarket1bg {
-    background-color: #aefb97;
-    padding: 20px;
-    border-radius: 20px;
-    /* color: rgb(200, 67, 67); */
-    text-align: center;
-}
-
-.supermarket2bg {
-    background-color: #D3FBFFAB;
+    background-color: #09651f;
     padding: 20px;
     border-radius: 20px;
     /* color: rgb(200, 67, 67); */

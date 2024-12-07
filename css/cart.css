@@ -8,7 +8,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #fbfed3;
-    color: #333;
+    /* color: #333; */
 }
 
 /* Header styles */
@@ -38,41 +38,43 @@ header {
 }
 
 /* Supermarkets section */
-.supermarket-container {
+.supermarkets {
+    padding: 40px 60px;
+    /* background-color: white; */
+    /* text-align: center; */
+}
+
+.supermarkets h2{
+    color: #000000;
+    font-size: 30px;
+    padding: 30px 20px;
+}
+
+.Supermarket1bg {
+    /* padding: 40px 20px; */
+    /* background-color: white; */
+    background-color: #aefb97;
+    margin: 5vh 7vw 0;
+    padding: 10px 3.0vw 40px;
+    border-radius: 30px;
+    /* text-align: center; */
+}
+
+.supermarket-list {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
-    gap: 20px;
+    margin-top: 30px;
+}
+
+.supermarket {
+    background-color: #e7f6f2;
     padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.supermarket-section {
-    flex: 1;
-    max-width: 45%; /* Adjust as needed */
-}
-
-.supermarket1bg {
-    background-color: #aefb97;
-    padding: 20px;
-    border-radius: 20px;
-    /* color: rgb(200, 67, 67); */
-    text-align: center;
-}
-
-.supermarket2bg {
-    background-color: #D3FBFFAB;
-    padding: 20px;
-    border-radius: 20px;
-    /* color: rgb(200, 67, 67); */
-    text-align: center;
-}
-
-.supermarkets h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.supermarkets h3 {
+.supermarket h3 {
     font-size: 22px;
     margin-bottom: 10px;
 }
@@ -150,6 +152,7 @@ footer {
 .search-bar input {
     padding: 8px 12px; /* Reasonable padding inside the input */
     width: 1500px; /* Adjust width to your desired size */
+    height: 1000px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;

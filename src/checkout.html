@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="icon" type="image/png" href="../../image/favicon.png">
+    <link rel="stylesheet" href="../css/checkout.css">
+</head>
+<body>
+    <div class="body">
+        <!-- navbar -->
+        <header>
+            <div class="header-container">
+                <div class="title">
+                    <h1>Checkout</h1>
+                </div>
+            </div>
+        </header>
+    
+        <div class="main-container">
+            <div class="summary-container">
+                <div class="summary">
+                    <div class="address">
+                        <h1>Address</h1>
+                        <h3>167 George Road, Selly Oak, Birmingham</h3>
+                    </div>
+                    <h2 class="summary_items">ORDER SUMMARY ITEM(S) </h2>
+                    <div class="order">
+                        <h3>My order</h3>
+                        <h3 class="order-item">
+                            <span>Bread x2</span>
+                            <span class="price">£ 56.90</span>
+                          </h3>
+                    </div>
+                    <div class="order">
+                        <h3>Jude's Order</h3>
+                        <h3 class="order-item">
+                            <span>Pork x2</span>
+                            <span class="price">£ 46.90</span>
+                          </h3>
+                    </div>
+                    <table>
+                        <tr>
+                            <td>Items Subtotal: </td>
+                            <td class="subtotal">£ <span class="subtotal_span"> 103.80</span></td>
+                        </tr>
+                        <tr>
+                            <td>Service tax (6%): </td>
+                            <td class="service_tax">£ <span class="service_tax_span"> 27.41</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Shipping option: <br>
+                                <div class="select-box">
+                                    <div class="options-container">
+                                        <div class="option">
+                                            <input type="radio" class="radio" id="standard"
+                                            name="shipping_option" onclick="displayShippingFee()">
+                                            <label for="standard" value="standard_delivery">Standard Delivery - 5 Days</label>
+                                        </div>
+                                        <div class="option">
+                                            <input type="radio" class="radio" id="express" name="shipping_option">
+                                            <label for="express" value="express_delivery">Express Delivery - 2 Days</label>
+                                        </div>
+                                        <div class="option">
+                                            <input type="radio" class="radio" id="self" name="shipping_option">
+                                            <label for="self" value="self_pickup">Self Pickup - Free of Charge</label>
+                                        </div>
+                                    </div>
+                                    <div class="selected">
+                                        Select a shipping option
+                                    </div>
+                                </div>
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="discount">
+                                <label for="input_code">Discount Code:</label>
+                                <input type="text" class="input_code" id="input_code" name="discount_code" value="" placeholder="Enter code here : ABCDE"><br>
+                                <button class="discount_button" onclick="checkDiscountCode(); calculateGrandTotal()">Apply</button>
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Shipping Fee:</td>
+                            <td class="shipping_fee">£ <span class="shipping_fee_span">5.50</span></td>
+                        </tr>
+                        <tr class="discount_row">
+                            <td>Discount:</td>
+                            <td class="discount_price">- £ <span class="discount_price_span">0.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>TOTAL: </td>
+                            <td class="grand_total">£ <span class="grand_total_span">489.81</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button class="checkout_button" id="checkout_button" onclick="alertSpinningWheel()">Place Order</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="cart2.js"></script>
+</body>
+</html>

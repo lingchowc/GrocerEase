@@ -1,5 +1,5 @@
 body{
-    background-color: beige;
+    background-color: #FEFFF2;
 }
 
 .container {
@@ -23,5 +23,5 @@ h1 {
 }
 
 .logout-button:hover {
-    background-color: #c9302c;
+    background-color: #eaaaa8;
 }
