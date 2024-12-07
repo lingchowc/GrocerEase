@@ -1,54 +1,114 @@
-<?php
-// Start the session at the very top of the script
-session_start();
+ <?php
+// // Start the session at the very top of the script
+// session_start();
 
-// Initialize error message
-$error_message = "";
+// // Initialize error message
+// $error_message = "";
 
-// Check if the form is submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get form data
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+// // Check if the form is submitted
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//     // Get form data
+//     $username = $_POST['username'];
+//     $password = $_POST['password'];
 
-    // Database connection details
-    $dsn = "mysql:host=localhost;dbname=sshuserlogin";
-    $dbusername = "root";
-    $dbpassword = "";
+//     // Database connection details
+//     $dsn = "mysql:host=localhost;dbname=sshuserlogin";
+//     $dbusername = "root";
+//     $dbpassword = "";
 
-    try {
-        // Create a PDO connection
-        $pdo = new PDO($dsn, $dbusername, $dbpassword, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+//     try {
+//         // Create a PDO connection
+//         $pdo = new PDO($dsn, $dbusername, $dbpassword, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
 
-        // Prepare the SQL query to check username and password
-        $query = "SELECT * FROM login WHERE username = :username AND password = :password";
-        $stmt = $pdo->prepare($query);
+//         // Prepare the SQL query to check username and password
+//         $query = "SELECT * FROM login WHERE username = :username AND password = :password";
+//         $stmt = $pdo->prepare($query);
 
-        // Bind the parameters
-        $stmt->bindParam(':username', $username);
-        $stmt->bindParam(':password', $password);
+//         // Bind the parameters
+//         $stmt->bindParam(':username', $username);
+//         $stmt->bindParam(':password', $password);
 
-        // Execute the query
-        $stmt->execute();
+//         // Execute the query
+//         $stmt->execute();
 
-        // Check if the login is successful
-        if ($stmt->rowCount() == 1) {
-            // Store user session info
-            $_SESSION['username'] = $username;
+//         // Check if the login is successful
+//         if ($stmt->rowCount() == 1) {
+//             // Store user session info
+//             $_SESSION['username'] = $username;
 
-            // Redirect to the user dashboard
-            header("Location: userDashboard.php");
-            exit();
-        } else {
-            // Login failed, set error message
-            $error_message = "Login failed. Invalid username or password.";
+//             // Redirect to the user dashboard
+//             header("Location: userDashboard.php");
+//             exit();
+//         } else {
+//             // Login failed, set error message
+//             $error_message = "Login failed. Invalid username or password.";
+//         }
+//     } catch (PDOException $e) {
+//         // Display database connection error
+//         die("Connection failed: " . $e->getMessage());
+//     }
+// }
+    // Start the session at the very top of the script
+    session_start();
+
+    // Include Composer's autoloader
+    require_once 'vendor/autoload.php';
+
+    use Symfony\Component\Yaml\Yaml;
+
+    // Load YAML configuration
+    $config = Yaml::parseFile('config.yaml');
+
+    // Extract database configuration
+    $dbConfig = $config['database'];
+    $dsn = "mysql:host={$dbConfig['host']};dbname={$dbConfig['dbname']}";
+    $dbusername = $dbConfig['username'];
+    $dbpassword = $dbConfig['password'];
+
+    // Initialize error message
+    $error_message = "";
+
+    // Check if the form is submitted
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Get form data
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+        try {
+            // Create a PDO connection
+            $pdo = new PDO($dsn, $dbusername, $dbpassword, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+
+            // Prepare the SQL query to check username and password
+            $query = "SELECT * FROM login WHERE username = :username AND password = :password";
+            $stmt = $pdo->prepare($query);
+
+            // Bind the parameters
+            $stmt->bindParam(':username', $username);
+            $stmt->bindParam(':password', $password);
+
+            // Execute the query
+            $stmt->execute();
+
+            // Check if the login is successful
+            if ($stmt->rowCount() == 1) {
+                // Store user session info
+                $_SESSION['username'] = $username;
+
+                // Redirect to the user dashboard
+                header("Location: userDashboard.php");
+                exit();
+            } else {
+                // Login failed, set error message
+                $error_message = "Login failed. Invalid username or password.";
+            }
+        } catch (PDOException $e) {
+            // Display database connection error
+            die("Connection failed: " . $e->getMessage());
         }
-    } catch (PDOException $e) {
-        // Display database connection error
-        die("Connection failed: " . $e->getMessage());
     }
-}
-?>
+
+?> 
+
 
 <!DOCTYPE html>
 <html lang="en">
