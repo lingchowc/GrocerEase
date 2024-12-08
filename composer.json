@@ -1,5 +1,6 @@
 {
     "require": {
-        "symfony/yaml": "^7.2"
+        "symfony/yaml": "^7.2",
+        "slim/slim": "^4.14"
     }
 }
