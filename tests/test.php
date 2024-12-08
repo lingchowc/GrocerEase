@@ -1,18 +1,14 @@
-<?php
+<?php 
+    $dsn = "mysql:host=127.0.0.1;dbname=studentdb";
+    $dbusername = "root";
+    $dbpassword = "";
 
-// require_once '../html/functions/dbcontest.php';
-
-class Test extends PHPUnit\Framework\TestCase
-{
- public function testOutput()
- {
-//     // Capture the output of hello.php
-//     ob_start();
-//     include '../html/functions/dbcontest.php';
-//     $output = ob_get_clean();
-
-//     // Assert that the output is "Hello, Docker!"
-//     $this->assertEquals("OK", $output);
- }
-}
+    try {
+        // Create a PDO connection
+        $pdo = new PDO($dsn, $dbusername, $dbpassword, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+        echo "OK";
+    } catch (PDOException $e) {
+        // Display database connection error
+        echo "Connection failed: " . $e->getMessage();
+    }
 ?>
