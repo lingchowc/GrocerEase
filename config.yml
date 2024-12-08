@@ -1,0 +1,9 @@
+database:
+  host: localhost
+  dbname: studentdb
+  username: root
+  password: ""
+
+app:
+  name: Student Smart Home
+  version: 1.0.0
