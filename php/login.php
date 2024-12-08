@@ -66,28 +66,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Dashboard - Login</title>
-    <link rel="stylesheet" href="../css/login.css">
+    <title>Student Smart Home Login</title>
+    <link rel="stylesheet" href="../css/login.css"> 
 </head>
 <body>
     <div class="container">
+        <h1>Welcome to Student Smart Home</h1>
         <form action="login.php" method="POST">
-            <h1>Welcome to Student Smart Home</h1>
-            <div class="row justify-content-center">
-                <h2>Username</h2>
-                <input type="text" name="username" class="form-control" required><br />
-                <h2>Password</h2>
-                <input type="password" name="password" class="form-control" required>
-<br />
-                <input type="submit" value="Login" class="btn btn-primary">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
             </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Log In</button>
         </form>
-
-        <?php if (!empty($error_message)): ?>
-            <div class="error-message">
-                <p style="color: red; text-align: center;"><?php echo $error_message; ?></p>
-            </div>
-        <?php endif; ?>
+        <a href="#" class="forgot-password">Forgot Password?</a>
     </div>
 </body>
 </html>
