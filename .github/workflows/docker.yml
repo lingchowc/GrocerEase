@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - add/docker-ci
+      - feature/docker-ci
   workflow_dispatch:
 
 jobs:
