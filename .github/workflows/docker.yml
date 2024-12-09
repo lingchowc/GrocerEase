@@ -24,7 +24,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/lingchowc/Taylorian-Prototype
+          images: ghcr.io/lingchowc/taylorian-prototype
           tags: |
             type=sha
             type=raw,value=latest,enable=true
@@ -65,7 +65,7 @@ jobs:
 
       - name: Pull image
         run: |
-          docker pull ghcr.io/lingchowc/Taylorian-Prototype:latest
+          docker pull ghcr.io/lingchowc/taylorian-prototype:latest
 
       - name: Run image
         run: |
