@@ -1,17 +1,12 @@
-<<<<<<< HEAD
-body{
-    background-color: #FEFFF2;
-=======
 body {
     font-family: Arial, sans-serif;
-    background-color: #e6f9f9; /* Light cyan background */
+    background-color:#93ebf7 ; /* Light cyan background */
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
->>>>>>> feature/login
 }
 
 .container {
@@ -51,10 +46,6 @@ input[type="password"] {
     font-size: 16px;
 }
 
-<<<<<<< HEAD
-.logout-button:hover {
-    background-color: #eaaaa8;
-=======
 button {
     background-color: #99ff99; /* Light green background */
     color: #000; /* Black text */
@@ -80,5 +71,4 @@ button:hover {
 
 .forgot-password:hover {
     text-decoration: underline;
->>>>>>> feature/login
 }
