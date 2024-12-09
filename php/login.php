@@ -6,14 +6,16 @@
     // Include Composer's autoloader
     require_once '../vendor/autoload.php';
 
-    use Symfony\Component\Yaml\Yaml;
+    // use Symfony\Component\Yaml\Yaml;
 
     // Load YAML configuration
-    $config = Yaml::parseFile('../config.yml');
+    // $config = Yaml::parseFile('../config.yml');
 
     // Extract database configuration
-    $dbConfig = $config['database'];
-    $dsn = "mysql:host={$dbConfig['host']};dbname={$dbConfig['dbname']}";
+    // $dbConfig = $config['database'];
+    // $dsn = "mysql:host={$dbConfig['host']};dbname={$dbConfig['dbname']}";
+    $dsn = "mysql:host=127.0.0.1;dbname=studentdb";
+    // $registry = new CollectorRegistry(new PDO($dsn, $dbusername, $dbpassword, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]));
     $dbusername = $dbConfig['username'];
     $dbpassword = $dbConfig['password'];
 
