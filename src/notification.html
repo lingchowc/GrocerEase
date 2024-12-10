@@ -11,3 +11,82 @@
             margin: 0;
             padding: 0;
         }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #E8FFE1;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .notifications {
+            margin-top: 20px;
+        }
+        .notification {
+            padding: 15px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fefefe;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .notification strong {
+            font-weight: bold;
+            color: #333;
+        }
+        .notification-time {
+            color: #888;
+            font-size: 0.9em;
+        }
+        .read-more {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .read-more a {
+            text-decoration: none;
+            color: #0288d1;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Notifications :</h2>
+            <p>Keep track of all activities</p>
+        </div>
+
+        <div class="notifications">
+            <!-- Notification Examples -->
+            <div class="notification">
+                <span><strong>John</strong> added milk to the cart!</span>
+                <span class="notification-time">12:32 AM</span>
+            </div>
+            <div class="notification">
+                <span><strong>Sarah</strong> has paid for her part of the shared cart!</span>
+                <span class="notification-time">1:45 PM</span>
+            </div>
+            <div class="notification">
+                <span><strong>Anna</strong> removed bread from the cart!</span>
+                <span class="notification-time">4:50 PM</span>
+            </div>
+            <div class="notification">
+                <span><strong>John</strong> has paid for the whole cart. Please pay your share of <strong>£8</strong>!</span>
+                <span class="notification-time">10:12 AM</span>
+            </div>
+        </div>
+
+        <div class="read-more">
+            <a href="#">Read more...</a>
+        </div>
+    </div>
+</body>
+</html>
