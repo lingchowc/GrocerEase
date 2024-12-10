@@ -1,0 +1,30 @@
+From: Suet Ling Chow
+
+Reflection on 2819226
+Name: Chiao Ting Lai (UI/UX designer)
+
+Collaborating with Jaslyn as the UI/UX designer on this project has been an enjoyable experience. Her creativity and commitment to designing an intuitive interface were apparent during the entire development process. The ultimate design she presented was user-friendly and achieved the project's objectives of streamlining the communal grocery ordering process. Jaslyn’s focus on details, particularly in making sure the app’s design was attractive and user-friendly, greatly enhanced our project.
+
+A key strength of hers was her capacity to understand users' feelings and convert their requirements into practical design elements. For example, her efforts in developing an efficient checkout procedure significantly enhanced the app's usability. Nevertheless, I observed that occasionally she was reluctant to suggest innovative or unconventional design concepts, possibly due to worries that they might not meet the team's standards. Promoting more open brainstorming meetings might make her feel more at ease with presenting unconventional ideas later on.
+
+To enhance our collaboration and increase productivity going forward, I recommend that Jaslyn incorporate more frequent design feedback checkpoints into her process. Although her solo efforts were outstanding, previous feedback from the team could have facilitated quicker alignment and prevented lastminute changes. Moreover, utilizing tools such as  for joint prototyping could enhance communication and improve the efficiency of the design process. I believe that with these small modifications, Jaslyn will keep thriving as a UI/UX designer and make valuable contributions to upcoming projects.
+
+________________________________________
+
+Reflection on 2829182
+Name: Jorja Tan Yi En(Database Manager)
+Jorja assumed the vital position of database manager for our project, and her efforts were essential in making certain that the app’s backend had a strong base. She exhibited significant commitment in establishing and overseeing the database system, making certain that data storage and retrieval were secure and effective. Her systematic strategy for designing the database schema guaranteed that the app could manage essential features, including user accounts, grocery lists, and shared orders, without significant performance problems.
+
+One of Jorja’s strengths was her capacity to resolve technical issues when under pressure. For example, when we faced problems with database connectivity, she promptly pinpointed the root cause and applied a solution, keeping the project on schedule. Nevertheless, one aspect that could see enhancement is communication. Although Jorja focused intently on her assignments, there were times when she might have given more updates or identified possible issues sooner. This would have enabled the team to offer assistance or modify our strategies as needed.
+
+For upcoming collaborations, I suggest that Jorja utilize more cooperative database tools, like shared ERD diagrams or live database visualization tools. These can assist in maintaining team alignment and offer a clearer understanding of the database's structure as it develops. Moreover, engaging in additional cross-functional conversations regarding the database’s integration with the front end could further improve the project's overall success. I sincerely value her technical expertise and look forward to working with her on future projects.
+
+________________________________________
+
+Reflection on 2806845
+Name: Weyherng Loh(Software Engineer)
+Collaborating with Weyherng as a fellow software engineer has been an enriching experience. Their technical skills and dedication to brainstorm for the project were essential during the project. They undertook difficult development projects, like building essential backend features and merging them smoothly with the front end. Their skill in addressing and resolving problems within strict time constraints was crucial in ensuring the project progressed as planned.
+
+One of Weyherng’s most notable advantages was his ability to collaborate. He consistently welcomed conversations about ideas, provided recommendations, and helped out whenever colleagues required assistance. His readiness to contribute beyond his designated responsibilities cultivated a constructive and effective team atmosphere. Nonetheless, there were times when I believed that more explicit documentation of his code might have assisted other team members, especially those involved with related components, in comprehending and expanding upon his contributions.
+
+To improve our future collaboration, I recommend that Weyherng add more comprehensive comments and documentation to his workflow. Moreover, participating more actively in code review meetings could enhance the team's technical performance by pinpointing areas for improvement and encouraging knowledge exchange. Ultimately, investigating modern backend frameworks or tools might aid him in broadening his skill set and introduce even more creative solutions to upcoming projects. In general, collaborating with WeyHerng has been enjoyable, and I am eager to face upcoming challenges together.
