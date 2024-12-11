@@ -11,12 +11,16 @@
 <body>
     <header>
         <div class="header-container">
-            <div class="title">
+            <div class="title-and-noti">
                 <h1>Supermarket Dashboard</h1>
+                    <div class="noti">
+                        <a href="../src/notification.html">🔔</a>
+                    </div>
             </div>
             <div class="cart">
-                <a href="../src/cart.html">Cart 🛒</a>
+                <a href="../src/cart.html">🛒</a>
             </div>
+        </div>
         </div>
     </header>
 

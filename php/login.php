@@ -20,7 +20,7 @@
     $dbpassword = $dbConfig['password'];
 
     // Initialize error message
-    $error_message = "";
+    $error_message = "error connecting to backend database";
 
     // Check if the form is submitted
     if ($_SERVER["REQUEST_METHOD"] == "POST") {

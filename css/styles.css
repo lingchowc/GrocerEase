@@ -26,10 +26,33 @@ header {
     margin: 0 auto;
     padding: 0 20px;
 }
+.title-and-noti {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between the title and the notification icon */
+}
+
+.title-and-noti h1 {
+    font-size: 28px;
+    margin: 0;
+    color: white;
+}
+
+.noti a {
+    font-size: 28px; /* Slightly larger icon */
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* .noti a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+} */
 
 .cart a {
     color: white;
-    font-size: 18px;
+    font-size: 28px;
     text-decoration: none;
 }
 
