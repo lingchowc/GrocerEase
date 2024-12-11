@@ -12,30 +12,61 @@
             padding: 0;
         }
         .container {
-            max-width: 800px;
+            max-width: 1000px; /* Increased width */
             margin: 50px auto;
             background: #E8FFE1;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Larger shadow for emphasis */
+            border-radius: 12px; /* Slightly larger border radius */
+            padding: 30px; /* Increased padding */
+            position: relative;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px; /* Larger margin from the top */
+            left: 20px; /* Larger margin from the left */
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #0288d1;
+            font-weight: bold;
+            font-size: 1.5em; /* Larger font size */
+        }
+        .back-button:hover {
+            color: #005a8e;
+        }
+        .back-button-icon {
+            margin-right: 10px; /* Increased spacing between icon and text */
+            display: inline-block;
+            width: 24px; /* Larger icon size */
+            height: 24px;
+            background-color: #0288d1;
+            mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg>') no-repeat center;
+            mask-size: contain;
         }
         .header {
             text-align: center;
-            padding: 10px 0;
-            border-bottom: 1px solid #ddd;
+            padding: 20px 0; /* Larger padding */
+            border-bottom: 2px solid #ddd; /* Thicker border */
+        }
+        .header h2 {
+            font-size: 2.5em; /* Larger header text */
+        }
+        .header p {
+            font-size: 1.2em; /* Larger subtext */
         }
         .notifications {
-            margin-top: 20px;
+            margin-top: 30px; /* Increased margin */
         }
         .notification {
-            padding: 15px;
-            margin-bottom: 10px;
+            padding: 20px; /* Larger padding */
+            margin-bottom: 15px; /* Increased spacing between notifications */
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 8px; /* Larger border radius */
             background-color: #fefefe;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            font-size: 1.2em; /* Larger text size */
         }
         .notification strong {
             font-weight: bold;
@@ -43,29 +74,37 @@
         }
         .notification-time {
             color: #888;
-            font-size: 0.9em;
+            font-size: 1em; /* Slightly larger timestamp */
         }
         .read-more {
             display: block;
             text-align: center;
-            margin-top: 20px;
+            margin-top: 30px; /* Increased margin */
         }
         .read-more a {
             text-decoration: none;
             color: #0288d1;
             font-weight: bold;
+            font-size: 1.3em; /* Larger link text */
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Back Button -->
+        <a href="http://127.0.0.1:5500/Taylorian-Prototype/src/userDashboard.html" class="back-button">
+            <span class="back-button-icon"></span>
+            Back
+        </a>
+
+        <!-- Header -->
         <div class="header">
             <h2>Notifications :</h2>
             <p>Keep track of all activities</p>
         </div>
 
+        <!-- Notifications -->
         <div class="notifications">
-            <!-- Notification Examples -->
             <div class="notification">
                 <span><strong>John</strong> added milk to the cart!</span>
                 <span class="notification-time">12:32 AM</span>
@@ -84,6 +123,7 @@
             </div>
         </div>
 
+        <!-- Read More -->
         <div class="read-more">
             <a href="#">Read more...</a>
         </div>
