@@ -1,10 +1,31 @@
-From : Chiao Ting Lai 
+From : Chiao Ting Lai ( 2819226 )
 
 Reflection on 2885593
 Name : Suet Ling Chow ( Software Development Team Leader )
 
-Working with Chow has been an extremely interesting experience. As the software development team leader, she demonstrated exceptional leadership by effectively guiding our team through the assignment. She ensured tasks were distributed equally among all members and that our assignment is carried out smoothly. One of Chow's standout qualities is her excellent technical knowledge, especially her outstanding coding skills. She not only generated clean and efficient code, but she also willingly shared her knowledge with the rest of us. I really appreciate her help when I encountered difficulties with the code, she suggested practical solutions and explained them clearly which improved my understanding and allowed me to enhance my technical skills. In addition, when I shared my ideas for UI design, she was open to discussion and focused, creating a collaborative and inclusive environment.
+During the assignment, Chow acted as the Software Development Team Leader, she showed her excellent leadership and effectively guided our team throughout the assignment by ensuring that tasks were distributed equally among all members and that everything was carried out smoothly. 
+
+Chow has a very solid understanding of technical concepts, such as HTML, PHP, and CSS. She not only generated clean and efficient code, but she also willingly shared her knowledge with all of us. I really appreciate her help when I encountered difficulties with the code. She was always there to help and make some useful suggestions, then explained them clearly to ensure that I fully understood the solutions, which also allowed me to improve my technical skills. In addition, when I shared my ideas regarding to the UI design, she was always open to discussion and created a collaborative and inclusive environment. 
 
 To further improve our teamwork in the future, I would suggest Chow consider delegating more opportunities for decision-making to other team members. While her guidance is invaluable, encouraging others to take initiative could further improve our collective growth. Overall, Chow’s leadership, coding expertise, and collaborative spirit have contributed significantly to the success of our group project. I believe that under her guidance, our future projects will continue to be productive and successful. 
 
 ___________________________________________________________________
+
+Reflection on 2829182
+Name : Jorja Tan Yi En ( Database Team )
+
+Jorja acts as a vital member of the database team and the writer of the summary report. Her technical skills, particularly in managing the backend and working with MySQL, was critical to the success of our assignment. She ensured that the database was connected well with the rest of the system by optimizing and structuring the database which improved the system's overall performance and stability. 
+
+Jorja's attention to detail leads to her strong ability to solve database issues, thus improving the reliability of the project. In addition, Jorja showed her excellent writing skills when doing the summary report. She took the time to review and synthesize every aspect of our project to ensure that our report could clearly describe and explain about the operation of the entire system. She is able to transform complex technical data into clearly organized and professional reports that are easy to understand which also showcase our team’s effort in a clear manner. 
+
+To further improve our teamwork in the future, I would suggest Jorja to seek feedback actively on her technical work by interacting with other team members during important phases of the project; she may discover new perspectives and opportunities for improvement that might otherwise be overlooked. This will not only improve her contribution, but also improve teamwork and the overall quality of our assignment. Overall, Jorja’s strong technical foundation, dedication, ability to bring the project together through her thoughts and writing have been critical to our assignment.
+
+___________________________________________________________________
+
+Reflection on 2806845
+Name : Wey Herng Loh ( Software Development Team )
+
+As a member of the Software Development Team, Wey Herng’s patience and willingness to collaborate were his most outstanding qualities. Whenever we encountered challenges or faced technical issues, Wey Herng always stayed calm and patient, and always took the time to help us to sort out everything. He was also an excellent teammate as he always contributed his own perspectives and listened to feedback from others. Whether it was through one-on-one discussions or team brainstorming sessions, his open-mindedness and collaborative attitude helped in fostering a positive and inclusive environment, where everyone felt comfortable with their ideas and opinions regarding the assignment. This created a productive team and allowed us to solve problems efficiently. 
+
+To improve our teamwork even further in the future, I would suggest that Wey Herng continue fostering open communication, while also taking on more opportunities to lead discussions or lead the direction of projects. With his strong technical ability and collaborative spirit, taking on leadership responsibilities could offer value to the team while also allowing him to develop new skills. Overall, Wey Herng’s patience, technical expertise, and team-oriented attitude made him an outstanding teammate, and I look forward to working with him again in future projects. 
+
